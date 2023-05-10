@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background-color: rgba(72, 168, 224, 0.418);
+}
+
+.container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label,
+input {
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    margin: 10px 0;
+    width: 100%;
+    float: left;
+}
+
+#loginMessage {
+    margin-top: 10px;
+    text-align: center;
+    color: red;
+}
+
+#cadastroBtn {
+    width: 100%;
+    text-align: right;
+    border: 0.5px solid #000;
+}
+
+#cadastroBtn a {
+    text-align: center;
+    display: block;
+    background-color: #f2f2f2;
+    color: #000;
+    text-decoration: none;
+
+}
+
+#cadastroBtn a:hover {
+    background-color: #ddd;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+#modeBtn i {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+#modeBtn {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    margin: 10px;
+}

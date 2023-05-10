@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Turma</title>
+    <link rel="stylesheet" href="css/turma.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="img/book_icon.gif">
+    <meta name="author" content="Maikelen Pasquali">
+</head>
+
+<body>
+    <div class="container">
+        <div class="dados-da-turma">
+            <h2>Informações da Turma</h2>
+            <p><strong>Turma:</strong> Turma 1</p>
+            <p><strong>Matéria:</strong> Matemática</p>
+            <p><strong>Horário:</strong> Segunda-feira, 8h-10h</p>
+        </div>
+
+        <div class="chamada clearfix">
+            <h2>Chamada</h2>
+            <form id="chamadaForm">
+                <table>
+                    <tr>
+                        <th>Nome do aluno</th>
+                        <th>Matrícula</th>
+                        <th>Presente</th>
+                        <th>Ausente</th>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>1234</td>
+                        <td><input type="checkbox" name="presente[]" value="joao"></td>
+                        <td><input type="checkbox" name="ausente[]" value="joao"></td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>5678</td>
+                        <td><input type="checkbox" name="presente[]" value="maria"></td>
+                        <td><input type="checkbox" name="ausente[]" value="maria"></td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>9012</td>
+                        <td><input type="checkbox" name="presente[]" value="carlos"></td>
+                        <td><input type="checkbox" name="ausente[]" value="carlos"></td>
+                    </tr>
+                </table>
+                <input type="submit" value="Enviar Chamada">
+            </form>
+        </div>
+        <div class="botoes clearfix">
+            <button id="abrirNotas" onclick="registrarNotas()">Registrar Notas</button>
+            <button id="enviarNotas" onclick="enviarNotas()" style="display: none;">Enviar Notas</button>
+            <a href="prof.html"><button>Fechar Turma</button></a>
+            <button id="cadastrarBtn" onclick="mostrarCaixaTexto()">Cadastrar Avaliação</button>
+            <textarea id="avaliacao" placeholder="Digite sua avaliação aqui" style="display: none;"></textarea>
+            <button id="enviarBtn" onclick="enviarAvaliacao()" style="display: none;">Enviar Avaliação</button>
+            <button id="fecharBtn" onclick="fecharAvaliacao()" style="display: none;">Fechar Avaliação</button>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+
+</html>
