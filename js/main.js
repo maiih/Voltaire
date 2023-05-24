@@ -25,7 +25,13 @@ function mostrarCaixaTexto() {
   document.getElementById("cadastrarBtn").style.display = "none";
   document.getElementById("enviarBtn").style.display = "inline";
   document.getElementById("fecharBtn").style.display = "inline";
+}
 
+function fecharAvaliacao(){
+  document.getElementById("avaliacao").style.display = "none";
+  document.getElementById("cadastrarBtn").style.display = "inline";
+  document.getElementById("enviarBtn").style.display = "none";
+  document.getElementById("fecharBtn").style.display = "none";
 }
 
 
@@ -193,12 +199,4 @@ function enviarNotas() {
   // Mostrar novamente o botão "Cadastrar Avaliação" e ocultar o botão "Enviar Notas"
   document.getElementById("enviarNotas").style.display = "none";
   document.getElementById("abrirNotas").style.display = "inline";
-}
-
-
-function fecharAvaliacao (){
-  document.getElementById("enviarBtn").style.display = "none";
-  document.getElementById("avaliacao").style.display = "none";
-  document.getElementById("cadastrarBtn").style.display = "inline";
-  document.getElementById("fecharBtn").style.display = "none";
 }
